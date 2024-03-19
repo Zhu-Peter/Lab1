@@ -1,4 +1,40 @@
-@import 'global';
-@import 'header';
+@import "global";
+@import "header";
 
-
+.gallery {
+    * {
+        scrollbar-color: transparent transparent;
+        scrollbar-width: 0px;
+      }
+  ol,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &_viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  &_slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  &_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+}
