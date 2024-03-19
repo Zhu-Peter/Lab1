@@ -1,1 +1,14 @@
 @use 'util' as u;
+
+.button {
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  

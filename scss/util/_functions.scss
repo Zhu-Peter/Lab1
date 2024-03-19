@@ -1,1 +1,21 @@
-@use 'sass.math';
+@use 'sass:math';
+
+$breakpoints: (
+    'small': 568px,
+    'medium': 768px,
+    'large': 998px,
+    'xlarge': 1440px
+);
+
+$sheet-width: (
+    'small': 340px,
+    'medium': 720px,
+    'large': 940px,
+    'xlarge': 1200px
+);
+
+@mixin breakpoint($size) {
+    @media only screen and (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
