@@ -196,18 +196,21 @@ nav {
   background-color: #444;
 }
 .gallery_button_before, .gallery_button_after {
+  display: inline;
+  justify-self: center;
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
   pointer-events: none;
-  margin-inline: auto;
-  transform: translate(30px);
 }
 .gallery_button_before svg, .gallery_button_after svg {
   height: 30px;
   width: 30px;
 }
+.gallery_button_before {
+  transform: translate(-150px, 200px);
+}
 .gallery_button_after {
-  transform: translate(380px);
+  transform: translate(150px, 200px);
 }/*# sourceMappingURL=style.css.map */
