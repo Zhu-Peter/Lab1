@@ -37,13 +37,12 @@
   flex-direction: column;
   align-items: center;
   min-height: 80px;
-  width: 340px;
   margin: 0 auto;
   padding-inline: 30px;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .header_layout {
-    width: 340px;
+    width: 300px;
   }
 }
 @media only screen and (min-width: 550px) {
@@ -81,7 +80,6 @@
 }
 
 nav {
-  width: auto;
   margin: -32px 0 22px auto;
 }
 
@@ -117,9 +115,9 @@ nav {
   color: #333;
   background-color: red;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   #menu_items {
-    width: 280px;
+    width: 240px;
   }
 }
 @media only screen and (min-width: 550px) {
@@ -166,9 +164,9 @@ nav {
   object-fit: cover;
   object-position: center;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .gallery img {
-    width: 340px;
+    width: 300px;
   }
 }
 @media only screen and (min-width: 550px) {
@@ -242,9 +240,9 @@ nav {
 .gallery_prev {
   transform: translate(-380px, -63%);
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .gallery_prev {
-    transform: translate(-380px, -63%);
+    transform: translate(-340px, -63%);
   }
 }
 @media only screen and (min-width: 550px) {
@@ -309,9 +307,9 @@ nav {
 .gallery_button_before {
   transform: translate(-150px, 200px);
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .gallery_button_before {
-    transform: translate(-170px, 200px);
+    transform: translate(-150px, 200px);
   }
 }
 @media only screen and (min-width: 550px) {
@@ -337,9 +335,9 @@ nav {
 .gallery_button_after {
   transform: translate(150px, 200px);
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .gallery_button_after {
-    transform: translate(170px, 200px);
+    transform: translate(150px, 200px);
   }
 }
 @media only screen and (min-width: 550px) {
@@ -366,15 +364,16 @@ nav {
 .deals {
   display: grid;
   margin-top: 60px;
+  max-width: 100vw;
 }
 .deals_container {
   background-color: white;
   margin-top: -320px;
   justify-self: center;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .deals_container {
-    width: 340px;
+    width: 300px;
   }
 }
 @media only screen and (min-width: 550px) {
@@ -419,7 +418,7 @@ nav {
 }
 .deals_deal {
   display: grid;
-  padding: 3rem;
+  box-sizing: border-box;
 }
 .deals_deal img {
   width: 250px;

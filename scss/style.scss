@@ -144,6 +144,7 @@
 .deals {
   display: grid;
   margin-top: 60px;
+  max-width: 100vw;
   &_container{
     background-color: white;
     margin-top: -320px;
@@ -171,7 +172,7 @@
   }
   &_deal{
     display: grid;
-    padding: 3rem;
+    box-sizing: border-box;
 
     img {
       width: 250px;

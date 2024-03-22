@@ -1,7 +1,7 @@
 @use 'sass:math';
 
 $breakpoints: (
-    'xsmall': 375px,
+    'xsmall': 320px,
     'small': 550px,
     'medium': 768px,
     'large': 998px,
@@ -9,7 +9,7 @@ $breakpoints: (
 );
 
 $sheet-width: (
-    'xsmall': 340px,
+    'xsmall': 300px,
     'small': 500px,
     'medium': 720px,
     'large': 940px,

@@ -37,13 +37,12 @@
   flex-direction: column;
   align-items: center;
   min-height: 80px;
-  width: 340px;
   margin: 0 auto;
   padding-inline: 30px;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .header_layout {
-    width: 340px;
+    width: 300px;
   }
 }
 @media only screen and (min-width: 550px) {
@@ -81,7 +80,6 @@
 }
 
 nav {
-  width: auto;
   margin: -32px 0 22px auto;
 }
 
@@ -117,9 +115,9 @@ nav {
   color: #333;
   background-color: red;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   #menu_items {
-    width: 280px;
+    width: 240px;
   }
 }
 @media only screen and (min-width: 550px) {
@@ -153,4 +151,78 @@ nav {
 
 .header_menu input:checked ~ #menu_items {
   display: block;
+}
+
+.product_header {
+  font-size: 1.9rem;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.product_grid {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+}
+.product_img {
+  width: 240px;
+}
+.product_container {
+  display: grid;
+  width: 275px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+  margin-inline: auto;
+  /* background-color: yellow;border-style: solid;border-color: black; */
+}
+.product_description {
+  text-align: justify;
+  margin: 0;
+}
+.product_price {
+  justify-self: end;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  font-size: 38px;
+}
+@media only screen and (min-width: 768px) {
+  .product_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .product_header {
+    font-size: 5rem;
+  }
+  .product_container {
+    width: 350px;
+  }
+  .product_title {
+    font-size: 2rem;
+  }
+  .product_img {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .product_container {
+    width: 700px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-auto-rows: auto;
+    grid-template-areas: "a b b b b b b b" "c c d d d d d d" "c c d d d d d d" "c c d d d d d d";
+    align-items: start;
+    justify-items: start;
+  }
+  .product_image {
+    grid-area: c;
+  }
+  .product_title {
+    grid-area: a;
+    justify-self: start;
+  }
+  .product_description {
+    grid-area: d;
+  }
+  .product_price {
+    grid-area: b;
+  }
 }/*# sourceMappingURL=products.css.map */

@@ -1,2 +1,99 @@
+@use "util" as *;
 @import "global";
 @import "header";
+
+.product {
+
+    &_header{
+        font-size: 1.9rem;
+        margin: 0 0 20px;
+        text-align: center;
+        
+    }
+  &_grid {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  &_img {
+    width: 240px;
+  }
+
+  &_container {
+    display: grid;
+    width: 275px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+
+    margin-inline: auto;
+
+    /* background-color: yellow;border-style: solid;border-color: black; */
+    // background-color: gray;
+  }
+
+  &_description {
+    text-align: justify;
+    margin: 0;
+  }
+
+  &_price {
+    justify-self: end;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    font-size: 38px;
+  }
+
+  @include breakpoint(medium){
+    &_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    &_header{
+        font-size: 5rem;
+    }
+    &_container {
+        width: 350px;
+    }
+    &_title{
+        font-size: 2rem;
+    }
+    &_img{
+        width: 350px;
+    }
+  }
+
+  @include breakpoint(xlarge) {
+
+    &_container {
+      width: 700px;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 10px;
+      grid-auto-rows: auto;
+      grid-template-areas:
+        "a b b b b b b b"
+        "c c d d d d d d"
+        "c c d d d d d d"
+        "c c d d d d d d";
+      align-items: start;
+      justify-items: start;
+    }
+
+    &_image {
+      grid-area: c;
+    }
+
+    &_title {
+      grid-area: a;
+      justify-self: start;
+    }
+
+    &_description {
+      grid-area: d;
+    }
+
+    &_price {
+        grid-area: b;
+      }
+  }
+}
