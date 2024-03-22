@@ -118,6 +118,26 @@ nav {
   object-fit: cover;
   object-position: center;
 }
+@media only screen and (min-width: 568px) {
+  .gallery img {
+    width: 340px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery img {
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 998px) {
+  .gallery img {
+    width: 940px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .gallery img {
+    width: 1200px;
+  }
+}
 .gallery * {
   scrollbar-color: transparent transparent;
   scrollbar-width: 0px;
@@ -166,8 +186,28 @@ nav {
   font-size: 0;
   outline: 0;
 }
-.gallery_next {
+.gallery_prev {
   transform: translate(-380px, -63%);
+}
+@media only screen and (min-width: 568px) {
+  .gallery_prev {
+    transform: translate(-380px, -63%);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery_prev {
+    transform: translate(-760px, -63%);
+  }
+}
+@media only screen and (min-width: 998px) {
+  .gallery_prev {
+    transform: translate(-980px, -63%);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .gallery_prev {
+    transform: translate(-1240px, -63%);
+  }
 }
 .gallery_navigation {
   position: absolute;
@@ -211,6 +251,46 @@ nav {
 .gallery_button_before {
   transform: translate(-150px, 200px);
 }
+@media only screen and (min-width: 568px) {
+  .gallery_button_before {
+    transform: translate(-170px, 200px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery_button_before {
+    transform: translate(-360px, 200px);
+  }
+}
+@media only screen and (min-width: 998px) {
+  .gallery_button_before {
+    transform: translate(-470px, 200px);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .gallery_button_before {
+    transform: translate(-600px, 200px);
+  }
+}
 .gallery_button_after {
   transform: translate(150px, 200px);
+}
+@media only screen and (min-width: 568px) {
+  .gallery_button_after {
+    transform: translate(170px, 200px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gallery_button_after {
+    transform: translate(360px, 200px);
+  }
+}
+@media only screen and (min-width: 998px) {
+  .gallery_button_after {
+    transform: translate(470px, 200px);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .gallery_button_after {
+    transform: translate(600px, 200px);
+  }
 }/*# sourceMappingURL=style.css.map */

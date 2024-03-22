@@ -1,5 +1,7 @@
+@use 'util' as *;
 @import "global";
 @import "header";
+
 
 .gallery {
   position: relative;
@@ -11,6 +13,12 @@
 
     object-fit: cover;
     object-position: center;
+
+    @each $breakpoint, $width in $breakpoints {
+      @media only screen and (min-width: $width) {
+        width: map-get($map: $sheet-width, $key: $breakpoint);
+      }
+    }
   }
   * {
     scrollbar-color: transparent transparent;
@@ -61,8 +69,14 @@
     font-size: 0;
     outline: 0;
   }
-  &_next {
+  &_prev {
     transform: translate(-380px, -63%);
+
+    @each $breakpoint, $width in $breakpoints {
+      @media only screen and (min-width: $width) {
+        transform: translate(-40px - map-get($map: $sheet-width, $key: $breakpoint), -63%);
+      }
+    }
   }
 
   &_navigation {
@@ -109,9 +123,20 @@
     }
     &_before {
       transform: translate(-150px, 200px);
+      @each $breakpoint, $width in $breakpoints {
+        @media only screen and (min-width: $width) {
+          transform: translate(-0.5 * map-get($map: $sheet-width, $key: $breakpoint), 200px);
+        }
+      }
     }
     &_after {
       transform: translate(150px, 200px);
+      @each $breakpoint, $width in $breakpoints {
+        @media only screen and (min-width: $width) {
+          transform: translate(0.5 * map-get($map: $sheet-width, $key: $breakpoint), 200px);
+        }
+      }
+    
     }
   }
 }
