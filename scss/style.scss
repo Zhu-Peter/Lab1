@@ -140,3 +140,23 @@
     }
   }
 }
+
+.deals {
+  display: grid;
+  &_container{
+    background-color: rgb(255, 231, 187);
+    justify-self: center;
+    @each $breakpoint, $width in $breakpoints {
+      @media only screen and (min-width: $width) {
+        width: map-get($map: $sheet-width, $key: $breakpoint);
+      }
+    }
+  }
+  &_grid{
+    display: grid;
+    justify-items: center
+  }
+  &_deal{
+    display: grid;
+  }
+}

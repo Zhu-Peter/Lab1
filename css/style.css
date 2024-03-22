@@ -24,7 +24,7 @@
   margin: 0 auto;
   padding-inline: 30px;
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 375px) {
   .header_layout {
     width: 340px;
   }
@@ -41,7 +41,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .header_layout {
-    width: 1200px;
+    width: 1400px;
   }
 }
 .header_logo {
@@ -118,7 +118,7 @@ nav {
   object-fit: cover;
   object-position: center;
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 375px) {
   .gallery img {
     width: 340px;
   }
@@ -135,7 +135,7 @@ nav {
 }
 @media only screen and (min-width: 1440px) {
   .gallery img {
-    width: 1200px;
+    width: 1400px;
   }
 }
 .gallery * {
@@ -189,7 +189,7 @@ nav {
 .gallery_prev {
   transform: translate(-380px, -63%);
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 375px) {
   .gallery_prev {
     transform: translate(-380px, -63%);
   }
@@ -206,7 +206,7 @@ nav {
 }
 @media only screen and (min-width: 1440px) {
   .gallery_prev {
-    transform: translate(-1240px, -63%);
+    transform: translate(-1440px, -63%);
   }
 }
 .gallery_navigation {
@@ -251,7 +251,7 @@ nav {
 .gallery_button_before {
   transform: translate(-150px, 200px);
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 375px) {
   .gallery_button_before {
     transform: translate(-170px, 200px);
   }
@@ -268,13 +268,13 @@ nav {
 }
 @media only screen and (min-width: 1440px) {
   .gallery_button_before {
-    transform: translate(-600px, 200px);
+    transform: translate(-700px, 200px);
   }
 }
 .gallery_button_after {
   transform: translate(150px, 200px);
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 375px) {
   .gallery_button_after {
     transform: translate(170px, 200px);
   }
@@ -291,6 +291,41 @@ nav {
 }
 @media only screen and (min-width: 1440px) {
   .gallery_button_after {
-    transform: translate(600px, 200px);
+    transform: translate(700px, 200px);
   }
+}
+
+.deals {
+  display: grid;
+}
+.deals_container {
+  background-color: rgb(255, 231, 187);
+  justify-self: center;
+}
+@media only screen and (min-width: 375px) {
+  .deals_container {
+    width: 340px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .deals_container {
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 998px) {
+  .deals_container {
+    width: 940px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .deals_container {
+    width: 1400px;
+  }
+}
+.deals_grid {
+  display: grid;
+  justify-items: center;
+}
+.deals_deal {
+  display: grid;
 }/*# sourceMappingURL=style.css.map */
