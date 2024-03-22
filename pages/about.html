@@ -6,9 +6,44 @@
     <meta name=viewport content=width=device-width, initial-scale=1.0>
     <title>About</title>
 
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header_layout">
+          <div class="header_logo">
+            <img id="header_logo" src="../images/logo.svg" alt="logo" />
+          </div>
+          <nav class="header_menu">
+            <label for="menu_check">
+              <svg
+                for="menu_check"
+                style="height: 30px"
+                class="header_menu_icon"
+                version="1.1"
+                id="menu_icon"
+                viewBox="0 0 16 16"
+                x="0px"
+                y="0px"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </g>
+              </svg>
+            </label>
+            <input type="checkbox" id="menu_check" />
+            <div id="menu_items">
+              <a href="../index.html">Home</a>
+              <a href="./about.html">About Us</a>
+              <a href="./products.html">See Products</a>
+              <a href="./contact.html">Contact Us</a>
+            </div>
+          </nav>
+        </div>
+      </header>
 </body>
 </html>
