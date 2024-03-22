@@ -5,7 +5,6 @@
   display: block;
   justify-items: center;
   align-items: center;
-
   &_layout {
     display: flex;
     flex-direction: column;
@@ -15,6 +14,7 @@
     margin: 0 auto;
     padding-inline: 30px;
 
+    background-color: green;
 
     @each $breakpoint, $width in $breakpoints {
       @media only screen and (min-width: $width) {
@@ -81,6 +81,11 @@ nav {
     
   }
   display: none;
+  @each $breakpoint, $width in $breakpoints {
+    @media only screen and (min-width: $width) {
+      width: map-get($map: $sheet-width, $key: $breakpoint) - 60px;
+    }
+  }
 }
 
 #header_logo{

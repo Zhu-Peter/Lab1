@@ -10,3 +10,21 @@
 * {
     box-sizing: border-box;
   }
+
+.green_button {
+    color: white;
+    background-color: green;
+    letter-spacing: 3px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+
+    margin: 20px;
+    padding: 10px 30px;
+
+    &:hover {
+        background-color: black;
+    }
+}
