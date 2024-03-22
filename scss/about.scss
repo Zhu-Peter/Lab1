@@ -1,2 +1,31 @@
+@use "util" as *;
 @import "global";
 @import "header";
+
+#banner_image {
+  min-height: 300px;
+  background-image: url("../images/pizza1.jpg");
+  background-size: cover;
+}
+
+.about {
+  @each $breakpoint, $width in $breakpoints {
+    @media only screen and (min-width: $width) {
+      width: map-get($map: $sheet-width, $key: $breakpoint);
+    }
+  }
+  position: relative;
+  padding: 2rem;
+  margin-inline: auto;
+  margin-top: -200px;
+  background-color: rgba($color: #FFFFFF, $alpha: 0.95);
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 40px;
+    color: orange;
+  }
+  p {
+    text-align: justify;
+    margin-top: 0;
+  }
+}

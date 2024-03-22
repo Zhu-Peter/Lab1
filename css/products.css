@@ -157,6 +157,8 @@ nav {
   font-size: 1.9rem;
   margin: 0 0 20px;
   text-align: center;
+  text-transform: uppercase;
+  color: red;
 }
 .product_grid {
   display: grid;

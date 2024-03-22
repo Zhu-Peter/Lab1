@@ -151,4 +151,52 @@ nav {
 
 .header_menu input:checked ~ #menu_items {
   display: block;
+}
+
+#banner_image {
+  min-height: 300px;
+  background-image: url("../images/pizza1.jpg");
+  background-size: cover;
+}
+
+.about {
+  position: relative;
+  padding: 2rem;
+  margin-inline: auto;
+  margin-top: -200px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+@media only screen and (min-width: 320px) {
+  .about {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .about {
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about {
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 998px) {
+  .about {
+    width: 940px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .about {
+    width: 1400px;
+  }
+}
+.about h1 {
+  font-size: 3rem;
+  margin: 0 0 40px;
+  color: orange;
+}
+.about p {
+  text-align: justify;
+  margin-top: 0;
 }/*# sourceMappingURL=about.css.map */
