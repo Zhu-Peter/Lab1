@@ -30,6 +30,7 @@
   display: block;
   justify-items: center;
   align-items: center;
+  background-color: green;
 }
 .header_layout {
   display: flex;
@@ -39,7 +40,6 @@
   width: 340px;
   margin: 0 auto;
   padding-inline: 30px;
-  background-color: green;
 }
 @media only screen and (min-width: 375px) {
   .header_layout {
@@ -91,7 +91,7 @@ nav {
   min-width: auto;
 }
 #menu_icon:hover {
-  fill: black;
+  fill: red;
 }
 
 #menu_items {
@@ -108,13 +108,14 @@ nav {
   box-sizing: border-box;
   display: block;
   width: 100%;
-  border-top: 1px solid #333;
+  border-top: 1px solid yellow;
 }
 #menu_items a:last-child {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid yellow;
 }
 #menu_items a:hover {
-  background-color: black;
+  color: #333;
+  background-color: red;
 }
 @media only screen and (min-width: 375px) {
   #menu_items {
