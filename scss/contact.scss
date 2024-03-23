@@ -27,7 +27,7 @@
 
       @each $breakpoint, $width in $breakpoints {
         @media only screen and (min-width: $width) {
-          width: map-get($map: $sheet-width, $key: $breakpoint);
+          width: 0.8*map-get($map: $sheet-width, $key: $breakpoint);
         }
       }
       h1 {
@@ -39,6 +39,15 @@
       }
       a {
         color: orange;
+      }
+
+      >div {
+        @each $breakpoint, $width in $breakpoints {
+            @media only screen and (min-width: $width) {
+              width: 0.6*map-get($map: $sheet-width, $key: $breakpoint);
+            }
+          }
+          margin-inline: auto;
       }
     }
   }
@@ -54,6 +63,7 @@
           width: 0.6*map-get($map: $sheet-width, $key: $breakpoint);
         }
       }
+      margin-inline: auto;
 }
 
 #contact_form {
