@@ -189,6 +189,7 @@ footer > section {
   text-align: center;
   text-transform: uppercase;
   color: red;
+  animation: blink 2s ease-in-out infinite;
 }
 .product_grid {
   display: grid;
@@ -256,5 +257,11 @@ footer > section {
   }
   .product_price {
     grid-area: b;
+  }
+}
+
+@keyframes blink {
+  50% {
+    color: rgb(228, 196, 17);
   }
 }/*# sourceMappingURL=products.css.map */

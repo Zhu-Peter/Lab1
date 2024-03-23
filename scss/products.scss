@@ -11,6 +11,8 @@
         text-align: center;
         text-transform: uppercase;
         color: red;
+
+        animation: blink 2s ease-in-out infinite;
     }
   &_grid {
     display: grid;
@@ -98,4 +100,10 @@
         grid-area: b;
       }
   }
+}
+
+@keyframes blink {
+    50% {
+        color: rgb(228, 196, 17);
+    }
 }

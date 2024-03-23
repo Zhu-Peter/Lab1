@@ -232,6 +232,9 @@ footer > section {
   color: white;
   text-transform: capitalize;
 }
+.contact_phone_container p {
+  color: white;
+}
 .contact_phone_container a {
   color: orange;
 }

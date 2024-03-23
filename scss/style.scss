@@ -245,7 +245,7 @@
   &_container{
     background-color: green;
     margin-inline: auto;
-    padding: 3rem;
+    padding: 0.5rem;
     @each $breakpoint, $width in $breakpoints {
       @media only screen and (min-width: $width) {
         width: map-get($map: $sheet-width, $key: $breakpoint);
@@ -255,10 +255,17 @@
   
   text-align: center;
   &_button{
+    @extend .button;
+    @extend .green_button;
     &_container{
       display: grid;
       background-color: white;
-      padding: 3rem;
+      padding: 0.5rem;
     }
+  }
+  
+  @include breakpoint(small){
+    &_container{padding: 3rem;}
+    &_button_container{padding: 3rem;}
   }
 }
