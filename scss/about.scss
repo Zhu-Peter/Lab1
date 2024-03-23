@@ -1,7 +1,7 @@
 @use "util" as *;
 @import "global";
 @import "header";
-@import 'footer';
+@import "footer";
 
 #banner_image {
   min-height: 300px;
@@ -19,14 +19,61 @@
   padding: 2rem;
   margin-inline: auto;
   margin-top: -200px;
-  background-color: rgba($color: #FFFFFF, $alpha: 0.95);
+  background-color: rgba($color: #ffffff, $alpha: 0.95);
   h1 {
     font-size: 3rem;
     margin: 0 0 40px;
     color: orange;
   }
   p {
-    text-align: justify;
+    @include breakpoint(small){text-align: justify;}
+    
     margin-top: 0;
+  }
+}
+
+.owner {
+  &_container {
+    display: grid;
+    background-color: green;
+    margin-inline: auto;
+    padding: 2rem;
+    @each $breakpoint, $width in $breakpoints {
+      @media only screen and (min-width: $width) {
+        width: map-get($map: $sheet-width, $key: $breakpoint);
+      }
+    }
+  }
+  &_image {
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    &_container{
+        position: relative;
+        justify-self: center;
+        h2{
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            top: -40px;
+            left: 140px;
+            font-size: 200px;
+            font-family: fantasy;
+            font-weight: lighter;
+            color: orange;
+        }
+    }
+  }
+  h1 {
+    font-size: 2rem;
+    color: rgb(248, 248, 133);
+    text-align: center;
+  }
+  p {
+    color: rgb(247, 207, 132);
+    line-height: 1.4;
+    @include breakpoint(small){text-align: justify;}
   }
 }
