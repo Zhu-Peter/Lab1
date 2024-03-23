@@ -2,10 +2,10 @@ html {
   font-family: "PT Sans", sans-serif;
 }
 
-.button, .header label {
+.button, #contact_form a, .header label {
   text-decoration: none;
 }
-.button:hover, .header label:hover {
+.button:hover, #contact_form a:hover, .header label:hover {
   cursor: pointer;
 }
 
@@ -27,6 +27,22 @@ html {
 }
 .green_button:hover {
   background-color: black;
+}
+
+.black_button, #contact_form a {
+  color: white;
+  background-color: black;
+  letter-spacing: 3px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 20px;
+  padding: 10px 30px;
+}
+.black_button:hover, #contact_form a:hover {
+  background-color: red;
 }
 
 .header {
@@ -242,4 +258,48 @@ footer > section {
 
 #contact_hours {
   line-height: 1.5;
+}
+
+@media only screen and (min-width: 320px) {
+  .contact_form {
+    width: 180px;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .contact_form {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact_form {
+    width: 432px;
+  }
+}
+@media only screen and (min-width: 998px) {
+  .contact_form {
+    width: 564px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contact_form {
+    width: 840px;
+  }
+}
+
+#contact_form {
+  display: grid;
+}
+#contact_form input {
+  border-color: #ffffff;
+  stroke: #ffffff;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+}
+#contact_form textarea {
+  border-color: #ffffff;
+  stroke: #ffffff;
+  padding: 0.5rem;
+}
+#contact_form a {
+  width: fit-content;
 }/*# sourceMappingURL=contact.css.map */
