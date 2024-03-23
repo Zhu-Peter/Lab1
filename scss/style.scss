@@ -1,6 +1,7 @@
 @use 'util' as *;
 @import "global";
 @import "header";
+@import 'footer';
 
 
 .gallery {
@@ -144,6 +145,7 @@
 .deals {
   display: grid;
   margin-top: 60px;
+  margin-bottom: 80px;
   max-width: 100vw;
   &_container{
     background-color: white;
@@ -231,4 +233,32 @@
   background-color: red;
   justify-self: end;
   transform: skew(-20deg) translateX(120px);
+}
+
+.contact{
+  h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: orange;
+  }
+
+  &_container{
+    background-color: green;
+    margin-inline: auto;
+    padding: 3rem;
+    @each $breakpoint, $width in $breakpoints {
+      @media only screen and (min-width: $width) {
+        width: map-get($map: $sheet-width, $key: $breakpoint);
+      }
+    }
+  }
+  
+  text-align: center;
+  &_button{
+    &_container{
+      display: grid;
+      background-color: white;
+      padding: 3rem;
+    }
+  }
 }

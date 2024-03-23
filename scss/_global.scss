@@ -1,5 +1,9 @@
 @use 'util' as u;
 
+html{
+    font-family: 'PT Sans',sans-serif;
+}
+
 .button {
     text-decoration: none;
     &:hover{

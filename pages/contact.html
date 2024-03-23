@@ -1,49 +1,93 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-    <meta charset=UTF-8>
-    <meta http-equiv=X-UA-Compatible content=IE=edge>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE" ="edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
 
-    <link rel="stylesheet" href="../css/contact.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header_layout">
-          <div class="header_logo">
-            <img id="header_logo" src="../images/logo.svg" alt="logo" />
-          </div>
-          <nav class="header_menu">
-            <label for="menu_check">
-              <svg
-                for="menu_check"
-                style="height: 30px"
-                class="header_menu_icon"
-                version="1.1"
-                id="menu_icon"
-                viewBox="0 0 16 16"
-                x="0px"
-                y="0px"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <rect y="1" width="16" height="2"></rect>
-                  <rect y="7" width="16" height="2"></rect>
-                  <rect y="13" width="16" height="2"></rect>
-                </g>
-              </svg>
-            </label>
-            <input type="checkbox" id="menu_check" />
-            <div id="menu_items">
-              <a href="../index.html">Home</a>
-              <a href="./about.html">About Us</a>
-              <a href="./products.html">See Products</a>
-              <a href="./contact.html">Contact Us</a>
-            </div>
-          </nav>
+      <div class="header_layout">
+        <div class="header_logo">
+          <img id="header_logo" src="../images/logo.svg" alt="logo" />
         </div>
-      </header>
-</body>
+        <nav class="header_menu">
+          <label for="menu_check">
+            <svg
+              for="menu_check"
+              style="height: 30px"
+              class="header_menu_icon"
+              version="1.1"
+              id="menu_icon"
+              viewBox="0 0 16 16"
+              x="0px"
+              y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </label>
+          <input type="checkbox" id="menu_check" />
+          <div id="menu_items">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./products.html">See Products</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="contact_grid">
+        <article id="contact_location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303583.1835248013!2d-113.82237599175426!3d53.5266355050726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0224580deff23%3A0x411fa00c4af6155d!2sEdmonton%2C%20AB!5e0!3m2!1sen!2sca!4v1709089996729!5m2!1sen!2sca"
+            width="300"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
+        <article id="contact_hours">
+          <h1>Open Hours</h1>
+          <li>Monday: 8:00am - 9:00pm</li>
+          <li>Tuesday: 8:00am - 9:00pm</li>
+          <li>Wednesday: 8:00am - 9:00pm</li>
+          <li>Thursday: 7:00am - 9:00pm</li>
+          <li>Friday: 8:00am - 9:00pm</li>
+          <li>Saturday: 8:00am - 9:00pm</li>
+          <li>Sunday: 8:00am - 8:50pm</li>
+        </article>
+      </section>
+      <section class="contact_phone">
+        <div class="contact_phone_container">
+          <h1>Get in touch with us:</h1>
+          <p>Tel: <a href="tel:4035555555">(403) 555-5555</a></p>
+          <p>Email: <a href="mailto:emain@mail.ca">email@mail.com</a></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer_social">
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+        <a href="">Myspace</a>
+        <a href="">TikTok</a>
+      </section>
+      <section id="footer_legal">
+        <a href="">Private Policy</a>
+        <a href="">Newsletter</a>
+      </section>
+    </footer>
+  </body>
 </html>

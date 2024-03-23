@@ -1,2 +1,41 @@
+@use "util" as *;
 @import "global";
 @import "header";
+@import "footer";
+
+.contact {
+  &_grid {
+    margin-top: 80px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 80px;
+    align-items: start;
+    justify-content: center;
+
+    @include breakpoint(medium) {
+      grid-auto-flow: column;
+    }
+  }
+
+  &_phone {
+    &_container {
+      margin-top: 40px;
+      display: grid;
+      margin-inline: auto;
+      padding: 1.5rem;
+      background-color: green;
+
+      @each $breakpoint, $width in $breakpoints {
+        @media only screen and (min-width: $width) {
+          width: map-get($map: $sheet-width, $key: $breakpoint);
+        }
+      }
+      h1{color: white; text-transform: capitalize;}
+      a{color: orange;}
+    }
+  }
+}
+
+#contact_hours {
+  line-height: 1.5;
+}

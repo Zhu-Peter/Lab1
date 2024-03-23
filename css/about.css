@@ -1,3 +1,7 @@
+html {
+  font-family: "PT Sans", sans-serif;
+}
+
 .button, .header label {
   text-decoration: none;
 }
@@ -151,6 +155,32 @@ nav {
 
 .header_menu input:checked ~ #menu_items {
   display: block;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  padding-inline: 20px;
+  display: grid;
+  min-width: 65vw;
+  margin-top: 4%;
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-items: center;
+  }
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer > section {
+  display: grid;
+  align-items: start;
+  line-height: 2;
 }
 
 #banner_image {
