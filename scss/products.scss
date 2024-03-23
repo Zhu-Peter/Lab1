@@ -38,7 +38,6 @@
   }
 
   &_description {
-    text-align: justify;
     margin: 0;
   }
 
@@ -50,6 +49,10 @@
   }
 
   @include breakpoint(medium){
+    &_description {
+        
+    text-align: justify;
+    }
     &_grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -64,6 +67,7 @@
     }
     &_img{
         width: 350px;
+        border-radius: 50%;
     }
   }
 

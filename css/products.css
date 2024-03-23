@@ -226,7 +226,6 @@ footer > section {
   /* background-color: yellow;border-style: solid;border-color: black; */
 }
 .product_description {
-  text-align: justify;
   margin: 0;
 }
 .product_price {
@@ -236,6 +235,9 @@ footer > section {
   font-size: 38px;
 }
 @media only screen and (min-width: 768px) {
+  .product_description {
+    text-align: justify;
+  }
   .product_grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -250,6 +252,7 @@ footer > section {
   }
   .product_img {
     width: 350px;
+    border-radius: 50%;
   }
 }
 @media only screen and (min-width: 1440px) {
